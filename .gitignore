@@ -1,0 +1,15 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
+Gemfile.lock
+
+# source drafts, not part of the published site
+Intro robotics.docx
+intro-robotics-v3.md
+intro-robotics-v4.md
+intro-robotics-v5.md
+intro-robotics-v6.md
+intro-robotics-en-v1.md
+intro_robotics_roadmap_zh.md

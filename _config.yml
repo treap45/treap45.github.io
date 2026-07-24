@@ -1,0 +1,12 @@
+title: Tianyang Shen
+description: Notes and essays on robotics
+author: Tianyang Shen
+theme: minima
+minima:
+  skin: classic
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+header_pages:
+  - about.md
