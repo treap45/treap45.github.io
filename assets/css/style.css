@@ -188,6 +188,7 @@ mjx-container[display="true"] {
 
 .post-link {
   display: block;
+  color: var(--text);
   font-size: 21px;
   line-height: 1.35;
 }
@@ -209,6 +210,8 @@ mjx-container[display="true"] {
   text-align: center;
   font-size: 15px;
 }
+
+.site-footer a { color: var(--muted); }
 
 .site-footer .sep { margin: 0 8px; }
 
