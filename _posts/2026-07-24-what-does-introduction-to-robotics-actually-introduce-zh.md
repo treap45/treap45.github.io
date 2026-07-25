@@ -3,6 +3,7 @@ layout: post
 title: "What Does Introduction to Robotics Actually Introduce?"
 date: 2026-07-24
 lang: zh
+listed: false
 translation_url: /2026/07/24/what-does-introduction-to-robotics-actually-introduce-en/
 translation_label: Read in English
 ---
