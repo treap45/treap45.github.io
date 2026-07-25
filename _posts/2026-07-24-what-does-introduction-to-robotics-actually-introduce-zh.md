@@ -34,11 +34,11 @@ translation_label: Read in English
 
 带着这个疑问，我去翻了几所学校名字里带 robotics 的入门课。
 
-最先看到的是一条清晰的分野，而 Stanford 是最干净的标本，因为它把两门都开了。CS223A 是 Khatib 的课，讲机器人系统的建模、规划与控制，本质上是几何、运动学、静力学、动力学、控制的一次巡礼，也就是我上的那一种。[CS237A](https://bulletin.stanford.edu/courses/2185453)，Principles of Robot Autonomy I，讲的是怎么给移动机器人装上感知、定位与 SLAM、非线性系统控制与 learning-based control、运动规划，以及不确定性下的决策。一门从机械系和电子系的传统里长出来，教机械臂的数学；一门从计算机系的传统里长出来，教移动机器人的自主。两门都教得认真，都有真机和大量代码，都是好课。
+最先看到的是一条清晰的分野，而 Stanford 是最干净的标本，因为它把两门都开了。[CS223A](https://cs.stanford.edu/groups/manips/teaching/cs223a/) 是 Khatib 的课，讲机器人系统的建模、规划与控制，本质上是几何、运动学、静力学、动力学、控制的一次巡礼，也就是我上的那一种。[CS237A](https://bulletin.stanford.edu/courses/2185453)，Principles of Robot Autonomy I，讲的是怎么给移动机器人装上感知、定位与 SLAM、非线性系统控制与 learning-based control、运动规划，以及不确定性下的决策。一门从机械系和电子系的传统里长出来，教机械臂的数学；一门从计算机系的传统里长出来，教移动机器人的自主。两门都教得认真，都有真机和大量代码，都是好课。
 
 如果故事到这里为止，结论会很漂亮：世上没有一门统一的 Introduction to Robotics，只有两门，你学到哪半个 robotics，取决于你大三那年推开了哪个系的门。
 
-可惜这个结论是错的。CMU 的 16-311（[现已改号 16-281](https://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/robotics/robotics.pdf)）课程描述里同时列了视觉、机器学习、运动规划、移动机构、正逆运动学和传感器，移动机器人和机械臂都讲。[Berkeley 的 EECS C106A](https://undergraduate.catalog.berkeley.edu/courses/1547841) 更整齐：机械臂那一整套一样不少，同时还有几何运动规划与避障、low level vision 和 structure from motion，期末前有一个 lab 直接叫 Fullstack Robotics: Perception, Planning, and Control，让学生用 MoveIt 算 IK，把感知和规划接起来驱动一台 UR7e 机械臂。
+可惜这个结论是错的。CMU 的 16-311（[现已改号 16-281](https://www.cs.cmu.edu/~16311/current/)）课程描述里同时列了视觉、机器学习、运动规划、移动机构、正逆运动学和传感器，移动机器人和机械臂都讲。[Berkeley 的 EECS C106A](https://undergraduate.catalog.berkeley.edu/courses/1547841) 更整齐：机械臂那一整套一样不少，同时还有几何运动规划与避障、low level vision 和 structure from motion，期末前有一个 lab 直接叫 Fullstack Robotics: Perception, Planning, and Control，让学生用 MoveIt 算 IK，把感知和规划接起来驱动一台 UR7e 机械臂。
 
 二分法不成立，宽课是存在的。
 
@@ -52,7 +52,7 @@ Stanford CS237A 的官方描述里就有 learning-based control，它夹在非�
 
 learning 需要的从来不是名录里那一行，是那个解释边界的角色。而这个角色，第一门课没有给过它。
 
-两所学校的续课给出了两种不同的后续。Stanford 的 [CS237B](https://web.stanford.edu/class/cs237b/pdfs/syllabus.pdf)，Principles of Robot Autonomy II，讲强化学习与最优控制的关系、prehensile 和 nonprehensile manipulation 的接触与动力学模型、imitation learning 与人类意图推断。在这门课里 learning 终于成了主线，但它是续课，要先修 CS237A，站在第一道门里的学生看不见第二道门。Berkeley 的 C106B 则讲灵巧手的运动学与控制、抓取与操作、非完整运动规划、SLAM、active vision，正课内容清一色是经典方法。强化学习确实出现了一次，位置在「任课老师自选的额外研究话题」那一栏，和无人机、软体机器人、AR/VR 并列。
+两所学校的续课给出了两种不同的后续。Stanford 的 [CS237B](https://web.stanford.edu/class/cs237b/pdfs/syllabus.pdf)，Principles of Robot Autonomy II，讲强化学习与最优控制的关系、prehensile 和 nonprehensile manipulation 的接触与动力学模型、imitation learning 与人类意图推断。在这门课里 learning 终于成了主线，但它是续课，要先修 CS237A，站在第一道门里的学生看不见第二道门。Berkeley 的 [C106B](https://undergraduate.catalog.berkeley.edu/courses/1547771) 则讲灵巧手的运动学与控制、抓取与操作、非完整运动规划、SLAM、active vision，正课内容清一色是经典方法。强化学习确实出现了一次，位置在「任课老师自选的额外研究话题」那一栏，和无人机、软体机器人、AR/VR 并列。
 
 最难解释的是 CMU。它没有把 learning 推到续课里，它就摆在第一门课的第四周，还请了做这行的人来讲。按理说，这门课应该能把学生送到那片大陆上去。
 
@@ -62,7 +62,7 @@ learning 需要的从来不是名录里那一行，是那个解释边界的角�
 
 在往下走之前得先停一下，因为有个反驳挺有力：课程大纲是公开的，那门课的名字下面白纸黑字写着讲什么，是我自己选的。没有人骗我，我只是没人指点。这是选课和 advising 的问题，不是课程设计的问题。
 
-这个反驳部分成立，我承认。如果当年有个学长在我选课时说一句「这门课只讲机械臂，你想做 manipulation policy 的话还得自己去看 CS285」，我后来两年会省掉很多力气。
+这个反驳部分成立，我承认。如果当年有个学长在我选课时说一句「这门课只讲机械臂，你想做 manipulation policy 的话还得自己去看 [CS285](https://rail.eecs.berkeley.edu/deeprlcourse/)」，我后来两年会省掉很多力气。
 
 但它有个致命的前提：它假设我知道自己该去查什么。而一个不知道 robot learning 存在的人，不会去搜索 robot learning。未知的未知没有检索入口，你不可能主动去查一样你不知道它有名字的东西。这是自学最根本的一道墙，也是为什么「你自己去查」这句话对入门者基本无效。
 
@@ -112,9 +112,9 @@ Robotics 这门学科，是从别的系里生出来的。机械系和电子系�
 
 上面这些解释了为什么会这样，但没有证明只能这样。
 
-我想过拿 CS231n 当反例，后来发现它不成立。深度学习看着横跨很广，但它从头到尾只有一个数学对象：一个可微的参数化函数，用梯度下降训练。那是一条比机械臂还紧的链，它证明的是有链就能讲好，正好站在上一节的论证那一边。
+我想过拿 [CS231n](https://cs231n.stanford.edu/) 当反例，后来发现它不成立。深度学习看着横跨很广，但它从头到尾只有一个数学对象：一个可微的参数化函数，用梯度下降训练。那是一条比机械臂还紧的链，它证明的是有链就能讲好，正好站在上一节的论证那一边。
 
-顺着这个思路会得到一个看似成立的方案：那让 robot learning 自己单开一门紧链的课不就行了？这门课其实早就存在，CS285 和 MIT 那门 manipulation 课都是。但它们解决不了本文的问题：一个不知道这片大陆存在的学生，不会去选这门课。单开的课再好，也只对已经拿到地图的人可见。
+顺着这个思路会得到一个看似成立的方案：那让 robot learning 自己单开一门紧链的课不就行了？这门课其实早就存在，CS285 和 MIT 那门 [manipulation 课](https://manipulation.mit.edu)都是。但它们解决不了本文的问题：一个不知道这片大陆存在的学生，不会去选这门课。单开的课再好，也只对已经拿到地图的人可见。
 
 真正的反例得去一个天生就不成链的领域找，比如计算机系统那门课。从二进制表示，到 C 与汇编，到处理器结构，到 cache 与存储层次，到链接、异常控制流、虚拟内存、并发。这些层之间没有任何数学上的推导关系，你不可能从补码推出虚拟内存。它们被排成一门课，靠的是另一种东西：一个所有内容都要回答的问题。当你写下一行代码并按下运行，从这里到硅片上，中间发生了什么。每一块内容按它离这个问题的距离被排进来，顺序就出来了。
 
@@ -208,7 +208,7 @@ Introduction to Robotics，到底 introduce 了什么？
 
 **从哪里开始：** Lynch & Park,《Modern Robotics》，网上有免费 PDF 和配套视频。如果你上过那门课，这一块你已经有了，运动规划在它第 10 章也有一份够用的概览；想更深，LaValle 的《Planning Algorithms》（免费在线）读 configuration space 和采样规划那几章就够。
 
-**下一步：** Russ Tedrake 的 Underactuated Robotics 讲义（MIT 6.8210，旧号 6.832，全部免费在线）。它会告诉你当机器人不能被简单地「算出来」时该怎么办，是从经典控制走向现代方法最好的一座桥。
+**下一步：** Russ Tedrake 的 [Underactuated Robotics](https://underactuated.mit.edu/) 讲义（MIT 6.8210，旧号 6.832，全部免费在线）。它会告诉你当机器人不能被简单地「算出来」时该怎么办，是从经典控制走向现代方法最好的一座桥。
 
 ### 1. 视觉与深度学习：现代感知的地基
 
@@ -216,7 +216,7 @@ Introduction to Robotics，到底 introduce 了什么？
 
 **为什么你会需要它：** 任何一个真实的抓取都从这里开始。这是我当年卡住的第一步。
 
-**从哪里开始：** Szeliski,《Computer Vision: Algorithms and Applications》（免费在线）打几何和多视图的底子。深度学习那一半用 CS231n。
+**从哪里开始：** Szeliski,《Computer Vision: Algorithms and Applications》（免费在线）打几何和多视图的底子。深度学习那一半用 [CS231n](https://cs231n.stanford.edu/)。
 
 ### 2. 状态估计与 SLAM：让机器人知道自己在哪
 
@@ -232,7 +232,7 @@ Introduction to Robotics，到底 introduce 了什么？
 
 **为什么你会需要它：** 现在几乎所有 manipulation 的前沿工作都站在这一块上。这是我空白得最彻底的一块。
 
-**从哪里开始：** Sutton & Barto,《Reinforcement Learning: An Introduction》（免费在线）建立概念，然后 Berkeley CS285（Sergey Levine，公开视频和作业）接上现代部分。模仿学习没有标准教科书，从 behavior cloning 和 DAgger 这条线的原始论文读起最快。
+**从哪里开始：** Sutton & Barto,《Reinforcement Learning: An Introduction》（免费在线）建立概念，然后 Berkeley [CS285](https://rail.eecs.berkeley.edu/deeprlcourse/)（Sergey Levine，公开视频和作业）接上现代部分。模仿学习没有标准教科书，从 behavior cloning 和 DAgger 这条线的原始论文读起最快。
 
 ### 4. 生成模型作为策略：当下 manipulation policy 的核心
 

@@ -33,11 +33,11 @@ Only later did I understand what that course had actually given me: a surveyor's
 
 Carrying that question, I went and read the intro courses at a few schools with robotics in their course catalogs.
 
-The first thing I saw was a clean split, and Stanford is the tidiest specimen because it offers both kinds. CS223A is Khatib's course on the modeling, planning, and control of robotic systems, essentially a grand tour of geometry, kinematics, statics, dynamics, and control. It is the kind I took. [CS237A](https://bulletin.stanford.edu/courses/2185453), Principles of Robot Autonomy I, is about equipping a mobile robot with perception, localization and SLAM, nonlinear and learning-based control, motion planning, and decision-making under uncertainty. One grew out of the mechanical and electrical engineering tradition and teaches the mathematics of arms; the other grew out of the computer science tradition and teaches the autonomy of mobile robots. Both are taught seriously, both have real hardware and plenty of code, and both are good courses.
+The first thing I saw was a clean split, and Stanford is the tidiest specimen because it offers both kinds. [CS223A](https://cs.stanford.edu/groups/manips/teaching/cs223a/) is Khatib's course on the modeling, planning, and control of robotic systems, essentially a grand tour of geometry, kinematics, statics, dynamics, and control. It is the kind I took. [CS237A](https://bulletin.stanford.edu/courses/2185453), Principles of Robot Autonomy I, is about equipping a mobile robot with perception, localization and SLAM, nonlinear and learning-based control, motion planning, and decision-making under uncertainty. One grew out of the mechanical and electrical engineering tradition and teaches the mathematics of arms; the other grew out of the computer science tradition and teaches the autonomy of mobile robots. Both are taught seriously, both have real hardware and plenty of code, and both are good courses.
 
 If the story ended here, the conclusion would be elegant: there is no single unified Introduction to Robotics, only two, and which half of robotics you learn depends on which department's door you pushed open in your junior year.
 
-Unfortunately, that conclusion is wrong. CMU's 16-311 ([since renumbered 16-281](https://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/robotics/robotics.pdf)) lists vision, machine learning, motion planning, mobile mechanisms, forward and inverse kinematics, and sensors all in one course description; it covers mobile robots and arms alike. [Berkeley's EECS C106A](https://undergraduate.catalog.berkeley.edu/courses/1547841) is even more complete: the full arm curriculum with nothing missing, plus geometric motion planning and obstacle avoidance, low level vision, and structure from motion, and near the end of the term a lab literally titled Fullstack Robotics: Perception, Planning, and Control, in which students use MoveIt to compute IK and wire perception and planning together to drive a UR7e arm.
+Unfortunately, that conclusion is wrong. CMU's 16-311 ([since renumbered 16-281](https://www.cs.cmu.edu/~16311/current/)) lists vision, machine learning, motion planning, mobile mechanisms, forward and inverse kinematics, and sensors all in one course description; it covers mobile robots and arms alike. [Berkeley's EECS C106A](https://undergraduate.catalog.berkeley.edu/courses/1547841) is even more complete: the full arm curriculum with nothing missing, plus geometric motion planning and obstacle avoidance, low level vision, and structure from motion, and near the end of the term a lab literally titled Fullstack Robotics: Perception, Planning, and Control, in which students use MoveIt to compute IK and wire perception and planning together to drive a UR7e arm.
 
 The dichotomy doesn't hold. Broad courses exist.
 
@@ -51,7 +51,7 @@ The real difference isn't whether learning gets mentioned. It's what a course ta
 
 What learning needs has never been that line in the catalog. It needs the role of explaining where the boundary lies. And that role, the first course has never given it.
 
-The follow-up courses at the two schools offer two different sequels. Stanford's [CS237B](https://web.stanford.edu/class/cs237b/pdfs/syllabus.pdf), Principles of Robot Autonomy II, covers the relationship between reinforcement learning and optimal control, contact and dynamics models for prehensile and nonprehensile manipulation, and imitation learning with human intent inference. There, learning finally becomes the through-line. But it is a sequel: it requires CS237A, and a student standing inside the first door cannot see the second one. Berkeley's C106B teaches the kinematics and control of dexterous hands, grasping and manipulation, nonholonomic motion planning, SLAM, and active vision; the core content is uniformly classical. Reinforcement learning does appear, exactly once, in the slot for additional research topics at the instructor's discretion, alongside drones, soft robots, and AR/VR.
+The follow-up courses at the two schools offer two different sequels. Stanford's [CS237B](https://web.stanford.edu/class/cs237b/pdfs/syllabus.pdf), Principles of Robot Autonomy II, covers the relationship between reinforcement learning and optimal control, contact and dynamics models for prehensile and nonprehensile manipulation, and imitation learning with human intent inference. There, learning finally becomes the through-line. But it is a sequel: it requires CS237A, and a student standing inside the first door cannot see the second one. Berkeley's [C106B](https://undergraduate.catalog.berkeley.edu/courses/1547771) teaches the kinematics and control of dexterous hands, grasping and manipulation, nonholonomic motion planning, SLAM, and active vision; the core content is uniformly classical. Reinforcement learning does appear, exactly once, in the slot for additional research topics at the instructor's discretion, alongside drones, soft robots, and AR/VR.
 
 The hardest case to explain is CMU. It didn't push learning off to a sequel. It put it in week four of the first course and invited someone from the field to speak. By all rights, that course should have been able to deliver students to the continent.
 
@@ -61,7 +61,7 @@ I puzzled over this for a long time without an answer. I'll come back to it.
 
 Before going further I have to stop, because there is a strong objection: syllabi are public. What the course teaches is printed in black and white right under its name, and I chose it. Nobody deceived me; I just had no one to point the way. This is a problem of course selection and advising, not of course design.
 
-The objection is partly right, and I concede that. If a senior student had told me at registration, "this course only covers arms; if you want to work on manipulation policies you'll need to go watch CS285 on your own," I would have saved a great deal of effort over the following two years.
+The objection is partly right, and I concede that. If a senior student had told me at registration, "this course only covers arms; if you want to work on manipulation policies you'll need to go watch [CS285](https://rail.eecs.berkeley.edu/deeprlcourse/) on your own," I would have saved a great deal of effort over the following two years.
 
 But it rests on a fatal premise: it assumes I knew what to look up. A person who doesn't know robot learning exists will not search for robot learning. Unknown unknowns have no search entry point. You cannot go look up a thing you don't know has a name. This is the most fundamental wall in self-study, and it is why "go look it up yourself" is nearly useless advice for a beginner.
 
@@ -111,9 +111,9 @@ My guess is that the looser mobile robot course actually leaks less, precisely b
 
 Everything above explains why things are this way. It does not prove they have to be.
 
-I considered CS231n as a counterexample and found that it fails. Deep learning looks sprawling, but from start to finish it has exactly one mathematical object: a differentiable parameterized function trained by gradient descent. That is a chain even tighter than the arm's. What it proves is that anything with a chain can be taught well, which lands squarely on the same side as the previous section's argument.
+I considered [CS231n](https://cs231n.stanford.edu/) as a counterexample and found that it fails. Deep learning looks sprawling, but from start to finish it has exactly one mathematical object: a differentiable parameterized function trained by gradient descent. That is a chain even tighter than the arm's. What it proves is that anything with a chain can be taught well, which lands squarely on the same side as the previous section's argument.
 
-Follow that thought and you arrive at a plan that looks workable: fine, then let robot learning have its own tightly chained course. That course already exists. CS285 is one; MIT's manipulation course is another. But they don't solve this essay's problem: a student who doesn't know the continent exists will not enroll in the course about it. However good a standalone course is, it is visible only to people who already hold the map.
+Follow that thought and you arrive at a plan that looks workable: fine, then let robot learning have its own tightly chained course. That course already exists. CS285 is one; MIT's [manipulation course](https://manipulation.mit.edu) is another. But they don't solve this essay's problem: a student who doesn't know the continent exists will not enroll in the course about it. However good a standalone course is, it is visible only to people who already hold the map.
 
 The real counterexample has to come from a field that natively refuses to form a chain, and the computer systems course is one. From binary representation, to C and assembly, to processor architecture, to caches and the memory hierarchy, to linking, exceptional control flow, virtual memory, and concurrency. There is no mathematical derivation connecting these layers; you cannot derive virtual memory from two's complement. What arranges them into one course is something else: a single question that every piece of content must answer. When you write a line of code and press run, what happens between here and the silicon? Each block is placed by its distance from that question, and the ordering falls out on its own.
 
@@ -207,7 +207,7 @@ Each block follows the same format: what it solves, why you'll need it, where to
 
 **Where to start:** Lynch & Park, *Modern Robotics*, with a free PDF and companion videos online. If you took that course, you already have this block, and chapter 10 gives a serviceable overview of motion planning; to go deeper, the configuration space and sampling-based planning chapters of LaValle's *Planning Algorithms* (free online) are enough.
 
-**Next step:** Russ Tedrake's Underactuated Robotics notes (MIT 6.8210, formerly 6.832, all free online). They tell you what to do when a robot cannot simply be "computed," and they are the best bridge from classical control to modern methods.
+**Next step:** Russ Tedrake's [Underactuated Robotics](https://underactuated.mit.edu/) notes (MIT 6.8210, formerly 6.832, all free online). They tell you what to do when a robot cannot simply be "computed," and they are the best bridge from classical control to modern methods.
 
 ### 1. Vision and deep learning: the foundation of modern perception
 
@@ -215,7 +215,7 @@ Each block follows the same format: what it solves, why you'll need it, where to
 
 **Why you'll need it:** Every real grasp starts here. This is the first step I got stuck on.
 
-**Where to start:** Szeliski, *Computer Vision: Algorithms and Applications* (free online) for the geometry and multi-view foundations. For the deep learning half, CS231n.
+**Where to start:** Szeliski, *Computer Vision: Algorithms and Applications* (free online) for the geometry and multi-view foundations. For the deep learning half, [CS231n](https://cs231n.stanford.edu/).
 
 ### 2. State estimation and SLAM: letting the robot know where it is
 
@@ -231,7 +231,7 @@ Each block follows the same format: what it solves, why you'll need it, where to
 
 **Why you'll need it:** Nearly all frontier manipulation work now stands on this block. This was my most complete blank.
 
-**Where to start:** Sutton & Barto, *Reinforcement Learning: An Introduction* (free online) for the concepts, then Berkeley CS285 (Sergey Levine; public lectures and assignments) for the modern half. Imitation learning has no standard textbook; the fastest route is the original papers along the behavior cloning and DAgger line.
+**Where to start:** Sutton & Barto, *Reinforcement Learning: An Introduction* (free online) for the concepts, then Berkeley [CS285](https://rail.eecs.berkeley.edu/deeprlcourse/) (Sergey Levine; public lectures and assignments) for the modern half. Imitation learning has no standard textbook; the fastest route is the original papers along the behavior cloning and DAgger line.
 
 ### 4. Generative models as policies: the core of today's manipulation policies
 
