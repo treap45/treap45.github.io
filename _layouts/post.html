@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  <div class="post-meta">
+    {{ page.author | default: site.author }}<br>
+    {% if page.affiliation or site.affiliation %}{{ page.affiliation | default: site.affiliation }}<br>{% endif %}
+    {{ page.date | date: "%B %Y" }}
+  </div>
+
+  {% if page.translation_url %}
+  <div class="post-lang-switch">
+    <a href="{{ page.translation_url | relative_url }}">{{ page.translation_label }}</a>
+  </div>
+  {% endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1 class="site-title">{{ site.title }}</h1>
+<div class="site-tagline">{{ site.description }}</div>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="post-list-meta">
+      {{ post.date | date: "%B %Y" }}{% if post.lang %} · {{ post.lang | upcase }}{% endif %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>

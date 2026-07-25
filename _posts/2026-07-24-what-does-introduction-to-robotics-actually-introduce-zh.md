@@ -3,11 +3,9 @@ layout: post
 title: "What Does Introduction to Robotics Actually Introduce?"
 date: 2026-07-24
 lang: zh
+translation_url: /2026/07/24/what-does-introduction-to-robotics-actually-introduce-en/
+translation_label: Read in English
 ---
-
-*[Read the English version](/2026/07/24/what-does-introduction-to-robotics-actually-introduce-en/)*
-
-Tianyang Shen
 
 我第一次意识到自己出了问题，是对着一团点云。
 
