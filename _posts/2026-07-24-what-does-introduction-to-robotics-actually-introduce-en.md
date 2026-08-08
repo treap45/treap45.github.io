@@ -81,10 +81,6 @@ The arm branch is easy to teach well because its content naturally forms a chain
 
 And so the branch that is easiest to teach well became, year after year, the whole.
 
-The status quo deserves a better defense than inertia. The arm chain isn't only the easiest thing to teach, it is also the most durable: someone who learned rotation matrices and feedback control twenty years ago lost nothing, which cannot be said for whatever anyone would have taught as the learning method of 2021.
-
-But durability justifies the core, not the silence. The more durable your core, the cheaper it is to say that it is one province — a sentence that costs less than a lecture, and would have saved me two years.
-
 ## A chain teaches you two things
 
 But the skew in content is not the deepest effect. Beyond content, a derivation chain teaches something deeper: what counts as an answer.
@@ -115,9 +111,7 @@ My guess is that the looser mobile robot course actually leaks less, precisely b
 
 Everything above explains why things are this way. It does not prove they have to be.
 
-I considered [CS231n](https://cs231n.stanford.edu/) as a counterexample and found that it fails. Deep learning looks sprawling, but from start to finish it has exactly one mathematical object: a differentiable parameterized function trained by gradient descent. That is a chain even tighter than the arm's. What it proves is that anything with a chain can be taught well, which lands squarely on the same side as the previous section's argument.
-
-Follow that thought and you arrive at a plan that looks workable: fine, then let robot learning have its own tightly chained course. That course already exists. CS285 is one; MIT's [manipulation course](https://manipulation.mit.edu) is another. But they don't solve this essay's problem: a student who doesn't know the continent exists will not enroll in the course about it. However good a standalone course is, it is visible only to people who already hold the map.
+Follow the logic of the chain and you arrive at a plan that looks workable: fine, then let robot learning have its own tightly chained course. That course already exists. CS285 is one; MIT's [manipulation course](https://manipulation.mit.edu) is another. But they don't solve this essay's problem: a student who doesn't know the continent exists will not enroll in the course about it. However good a standalone course is, it is visible only to people who already hold the map.
 
 The real counterexample has to come from a field that natively refuses to form a chain, and the computer systems course is one. From binary representation, to C and assembly, to processor architecture, to caches and the memory hierarchy, to linking, exceptional control flow, virtual memory, and concurrency. There is no mathematical derivation connecting these layers; you cannot derive virtual memory from two's complement. What arranges them into one course is something else: a single question that every piece of content must answer. When you write a line of code and press run, what happens between here and the silicon? Each block is placed by its distance from that question, and the ordering falls out on its own.
 
