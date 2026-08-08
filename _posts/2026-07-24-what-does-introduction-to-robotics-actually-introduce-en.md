@@ -81,6 +81,10 @@ The arm branch is easy to teach well because its content naturally forms a chain
 
 And so the branch that is easiest to teach well became, year after year, the whole.
 
+The status quo deserves a better defense than inertia. The arm chain isn't only the easiest thing to teach, it is also the most durable: someone who learned rotation matrices and feedback control twenty years ago lost nothing, which cannot be said for whatever anyone would have taught as the learning method of 2021.
+
+But durability justifies the core, not the silence. The more durable your core, the cheaper it is to say that it is one province — a sentence that costs less than a lecture, and would have saved me two years.
+
 ## A chain teaches you two things
 
 But the skew in content is not the deepest effect. Beyond content, a derivation chain teaches something deeper: what counts as an answer.
@@ -149,11 +153,13 @@ What actually works is not introducing a method. It is staging a failure.
 
 Give students a task their current tools just barely cannot reach. Grasp a piece of cloth. Push a box to a target across a table with unknown friction. Pull the middle object out of a cluttered pile. Have them actually write the equations, actually build the controller, and actually fail. And make sure the failure lives in the model itself: contact parameters that cannot be measured, state that is only partially observable, several equally reasonable actions from the same state.
 
-At that moment, saying "there is a continent devoted to exactly this kind of problem; it is called robot learning; its move is to not solve this equation, and to learn the policy from data instead; and the hottest thing on that continent right now is called the robot foundation model, which trains one policy on large-scale multi-task data to generalize across robots and tasks, instead of hand-writing a pipeline per task" lands in an entirely different way. It is no longer a new noun. It is the answer to a problem the student just crashed into with their own hands.
+At that moment, saying "there is a continent devoted to exactly this kind of problem; it is called robot learning; its move is not to throw the equations away, but to learn the part you just found you cannot write down, and to wire what it learns back into the model you already have; sometimes that means learning the whole policy end to end, more often it means learning one piece of it: the dynamics, the perception, a correction riding on top of your controller; and the hottest thing on that continent right now is called the robot foundation model, which trains one policy on large-scale multi-task data to generalize across robots and tasks, instead of hand-writing a pipeline per task" lands in an entirely different way. It is no longer a new noun. It is the answer to a problem the student just crashed into with their own hands.
 
 This also repairs the ruler from earlier. What students carry out is no longer "robot problems can be solved," but a more accurate version: some robot problems can be solved and some cannot, and learning to tell the two apart matters more than knowing how to solve the first kind.
 
-One lecture's worth of time, zero prerequisite load, not on the exam. That is all, and it is exactly what I lacked most. I was never afraid it would be hard. I was afraid of not knowing it existed.
+But one lecture is not enough. Students also need a minimal vocabulary — which situation supervised, imitation, and reinforcement learning each answer, and what a policy, a state, an action, a demonstration, and a reward are — enough to read an abstract and tell which door it is behind. More importantly, the question the failure raised has to keep being asked: after every block, what does the classical method assume here, where does that assumption break, and what would learning buy at exactly that point. Then learning is not a topic that was given a slot; it is a way of reading the whole problem space.
+
+Zero prerequisite load, nothing new on the exam. It is exactly what I lacked. I was never afraid it would be hard. I was afraid of not knowing it existed.
 
 ## If I were to redesign the first course
 
@@ -185,7 +191,7 @@ I don't regret taking that course. The surveyor's map it gave me is the real thi
 
 I am still walking that continent myself. I am writing this not because I have crossed it, but because I still remember the panic of standing in the fog, not knowing which way to step.
 
-But saying "your map is incomplete" and stopping there is cheap. An essay that spends its whole length complaining that nobody draws the map, and then draws none, has no standing to complain. So at the end of this essay I have listed what I spent the past two years filling in. Only after finishing the list did I notice something a little funny: **this catch-up list is the photographic negative of the missing map.** Every item on it is something someone should have pointed out to me at the start, and that I instead discovered by crashing into it.
+But saying "your map is incomplete" and stopping there is cheap. An essay that spends its whole length complaining that nobody draws the map, and then draws none, has no standing to complain. So at the end of this essay I have listed what I spent the past two years filling in. Only after finishing the list did I notice something a little funny: **this catch-up list is the photographic negative of the map I was missing.** Every item on it is something someone should have pointed out to me at the start, and that I instead discovered by crashing into it.
 
 It is certainly incomplete, and certainly biased toward my own direction. I work on manipulation, so that region is drawn in finer detail than the rest. But at least it is an actual map, and not one more sentence about how much maps matter.
 
